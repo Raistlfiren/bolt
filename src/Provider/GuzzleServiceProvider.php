@@ -15,7 +15,7 @@ class GuzzleServiceProvider implements ServiceProviderInterface
 
         $app['guzzle.api_version'] = $app->share(
             function () {
-                return version_compare(Client::VERSION, '6.0.0', '>=') ? 6 : 5;
+                return 7;
             }
         );
 
